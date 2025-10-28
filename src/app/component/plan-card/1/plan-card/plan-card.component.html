@@ -1,0 +1,16 @@
+<div class="card" [ngClass]="{'main': pricingPlan.isMain}">
+    <div class="header" [style.backgroundColor]="pricingPlan.color">
+        <span>$</span>
+        <h1>{{ pricingPlan.price }}</h1>
+        <span>/month</span>
+    </div>
+    <div class="body">
+        <h2>{{ pricingPlan.label }}</h2>
+        <div class="service-list">
+            <li *ngFor="let item of pricingPlan.services">{{ item }}</li>
+        </div>
+        <div>
+            <button class="custom-button">CHOOSE PLAN</button>
+        </div>
+    </div>
+</div>
