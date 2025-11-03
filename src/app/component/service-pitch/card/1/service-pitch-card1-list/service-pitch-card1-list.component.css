@@ -1,0 +1,23 @@
+.card-list {
+    display: grid;
+    gap: 50px;
+    width: 90%;
+    margin: 20px auto;
+    align-items: flex-end;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.card-list.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 400px) {
+
+    .card-list {
+        grid-template-columns: 1fr;
+    }
+}
