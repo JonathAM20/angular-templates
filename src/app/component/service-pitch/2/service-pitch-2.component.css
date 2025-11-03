@@ -1,0 +1,51 @@
+.service {
+    display: grid;
+    gap: 50px;
+    width: 90%;
+    margin: 20px auto;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    overflow: hidden;
+}
+
+.service.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-image img {
+    object-fit: cover;
+    clip-path: polygon(100% 20%,
+            25% 0%,
+            5% 90%,
+            100% 100%);
+}
+
+.service-pitch {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custom-button {
+    background-color: #0d6efd;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.custom-button:hover {
+    background-color: #0b5ed7;
+}
+
+@media (max-width: 400px) {
+
+    .service {
+        grid-template-columns: 1fr;
+    }
+}
