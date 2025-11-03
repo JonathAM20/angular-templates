@@ -1,13 +1,13 @@
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-service-pitch',
+  selector: 'app-service-pitch-1',
   standalone: true,
   imports: [],
-  templateUrl: './service-pitch.component.html',
-  styleUrl: './service-pitch.component.css'
+  templateUrl: './service-pitch-1.component.html',
+  styleUrl: './service-pitch-1.component.css'
 })
-export class ServicePitchComponent implements OnInit, OnDestroy {
+export class ServicePitch1Component implements OnInit, OnDestroy {
 
   isVisible: boolean = false;
 
