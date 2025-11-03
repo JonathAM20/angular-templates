@@ -3,15 +3,15 @@ import { Component, Input } from '@angular/core';
 import { PricingPlan } from '../../pricing-plan';
 
 @Component({
-  selector: 'app-plan-card',
+  selector: 'app-pricing-plan-card',
   standalone: true,
   imports: [
     CommonModule
   ],
-  templateUrl: './plan-card.component.html',
-  styleUrl: './plan-card.component.css'
+  templateUrl: './pricing-plan-card.component.html',
+  styleUrl: './pricing-plan-card.component.css'
 })
-export class PlanCardComponent {
+export class PricingPlanCardComponent {
 
   @Input() pricingPlan!: PricingPlan;
 
