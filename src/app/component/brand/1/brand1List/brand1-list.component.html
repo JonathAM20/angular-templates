@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="wrapper" [ngClass]="{'is-sliding': isAnimating}">
+        <div class="item" *ngFor="let imagem of brandList" [attr.data-id]="imagem.id">
+            <img [src]="imagem.url" [alt]="'Imagem ' + imagem.id">
+        </div>
+    </div>
+</div>
