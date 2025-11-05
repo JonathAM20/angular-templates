@@ -1,0 +1,29 @@
+<header class="menu-header">
+
+    <nav class="nav-bar">
+
+        <a href="/iconic" class="logo-desktop">
+            <img [src]="logoUrl" alt="Site Logo">
+        </a>
+
+        <button class="hamburger-btn" (click)="toggleMenu()" aria-label="Open Menu">
+            <span [class.open]="isMenuOpen"></span>
+            <span [class.open]="isMenuOpen"></span>
+            <span [class.open]="isMenuOpen"></span>
+        </button>
+
+        <ul class="menu-list" [class.active]="isMenuOpen">
+            <li class="logo-mobile-item">
+                <a href="/">
+                    <img [src]="logoUrl" alt="Site Logo">
+                </a>
+            </li>
+
+            <li *ngFor="let item of menuItems" class="menu-item">
+                <a (click)="toggleMenu()">{{ item.label }}</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</header>
