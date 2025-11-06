@@ -1,0 +1,18 @@
+.menu-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image:
+        linear-gradient(to top right,
+            rgba(0, 100, 255, 0.7) 0%,
+            rgba(255, 0, 128, 0.7) 50%,
+            rgba(255, 0, 128, 0.7) 50%),
+        url('/iconic/images/banner-img.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 350px;
+}
