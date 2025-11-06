@@ -1,19 +1,21 @@
 <div class="menu-background">
     <app-menu1 [logoUrl]="logoUrl" [menuItems]="menuItems"></app-menu1>
     <div class="main-message">
-        <h2>End-to-End Customer Journey Analytics</h2>
-        <br />
-        <p>No hours sank into aggregating and cleaning data. No complex SQL queries required. Just the answers
-            teams need to make smarter decisions, fast. Now, that's data-driven.</p>
-        <br />
-        <button class="custom-button">GET STARTED FOR FREE</button>
+        <div class="main-message-content">
+            <h1>End-to-End Customer Journey Analytics</h1>
+            <h3>No hours sank into aggregating and cleaning data. No complex SQL queries required. Just the answers
+                teams need to make smarter decisions, fast. Now, that's data-driven.</h3>
+            <div>
+                <button class="custom-button">GET STARTED FOR FREE</button>
+            </div>
+        </div>
     </div>
 </div>
 <app-brand1-list></app-brand1-list>
 <div class="service-message">
     <h1>Analytics for Product, Marketing, Sales and Support teams</h1>
+    <app-service-pitch-card1-list [servicePitchList]="servicePitchList"></app-service-pitch-card1-list>
 </div>
-<app-service-pitch-card1-list [servicePitchList]="servicePitchList"></app-service-pitch-card1-list>
 <app-service-pitch-1></app-service-pitch-1>
 <app-service-pitch-2></app-service-pitch-2>
 <div class="service-price">
@@ -25,4 +27,13 @@
         distribution of letters,</h3>
 </div>
 <app-pricing-plan-card-list [pricingPlanList]="dadosDasColunas"></app-pricing-plan-card-list>
+<div class="footer-service-pitch">
+    <div>
+        <h1>Ready to get started?</h1>
+        <h3>Start your free trial today, no credit card required.</h3>
+    </div>
+    <div>
+        <button class="custom-button">GET STARTED FOR FREE</button>
+    </div>
+</div>
 <app-footer1 [logoUrl]="logoUrl" [menuItems]="menuItems"></app-footer1>
