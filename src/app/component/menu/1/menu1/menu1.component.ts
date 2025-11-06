@@ -1,37 +1,32 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-
-interface MenuItem {
-  label: string;
-  link: string;
-}
+import { MenuItem } from '../../menu-item';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menu1',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   templateUrl: './menu1.component.html',
   styleUrl: './menu1.component.css'
 })
 export class Menu1Component {
 
-  @Input() menuItems: MenuItem[] = [
-    { label: 'HOME', link: '/iconic' },
-    { label: 'ABOUT', link: '/about' },
-    { label: 'SERVICE', link: '/service' },
-    { label: 'BLOG', link: '/blog' },
-    { label: 'ELEMENTS', link: '/elements' },
-    { label: 'CONTACTS', link: '/contact' },
-  ];
+  @Input() logoUrl: string = '';
+  @Input() menuItems: MenuItem[] = [];
 
   isMenuOpen: boolean = false;
 
-  logoUrl: string = 'iconic/images/logo_img.png';
-
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  getPathByLabel(targetLabel: string): string {
+    const itemEncontrado = this.menuItems.find(item => item.label.toLowerCase === targetLabel.toLowerCase);
+    return itemEncontrado ? itemEncontrado.path : '';
   }
 
 }

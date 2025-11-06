@@ -2,8 +2,8 @@
 
     <nav class="nav-bar">
 
-        <a href="/iconic" class="logo-desktop">
-            <img [src]="logoUrl" alt="Site Logo">
+        <a [href]="getPathByLabel('home')" class="logo-desktop">
+            <img [src]="logoUrl" alt="Logo">
         </a>
 
         <button class="hamburger-btn" (click)="toggleMenu()" aria-label="Open Menu">
@@ -14,13 +14,13 @@
 
         <ul class="menu-list" [class.active]="isMenuOpen">
             <li class="logo-mobile-item">
-                <a href="/">
-                    <img [src]="logoUrl" alt="Site Logo">
+                <a [href]="getPathByLabel('home')">
+                    <img [src]="logoUrl" alt="Logo">
                 </a>
             </li>
 
             <li *ngFor="let item of menuItems" class="menu-item">
-                <a (click)="toggleMenu()">{{ item.label }}</a>
+                <a [routerLink]="item.path" (click)="toggleMenu()">{{ item.label }}</a>
             </li>
         </ul>
 
