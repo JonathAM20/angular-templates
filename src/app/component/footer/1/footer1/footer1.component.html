@@ -1,0 +1,52 @@
+<div class="footer">
+    <div class="footer-column">
+        <a [href]="getPathByLabel('home')" class="logo-desktop">
+            <img [src]="logoUrl" alt="Logo">
+        </a>
+        <p>It is a long established fact that a btn btn-defaulter will be distracted by the btn
+            btn-defaultable content of a page when looking at its layout.</p>
+        <div class="redes-sociais">
+            <a href="URL_INSTAGRAM" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="URL_LINKEDIN" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="URL_TWITTER" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-column">
+        <h2>SOLUTIONS</h2>
+        <ul class="footer-menu">
+            <li *ngFor="let item of menuItems" class="menu-item">
+                <a [routerLink]="item.path">{{ item.label }}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2>CONTACT</h2>
+        <ul class="contact">
+            <li>
+                <i class="fa fa-phone"></i>
+                Call Us <br>
+                +1- 982-8-587 452 <br>
+                +1- 982-8-587 452
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i>
+                Email <br>
+                enquiry&#64;demo.com <br>
+                enquiry&#64;demo.com
+            </li>
+            <li>
+                <i class="fa fa-map-marker"></i>
+                505 Thornall St #301, Edison, <br>NJ 08837, USA
+            </li>
+        </ul>
+    </div>
+</div>
