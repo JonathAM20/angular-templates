@@ -2,9 +2,9 @@
     display: grid;
     gap: 50px;
     width: 90%;
-    margin: 20px auto;
+    margin: 100px auto;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -13,6 +13,10 @@
 .service.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.service-image {
+    overflow: hidden;
 }
 
 .service-image img {
@@ -40,11 +44,4 @@
 
 .custom-button:hover {
     background-color: #0b5ed7;
-}
-
-@media (max-width: 400px) {
-
-    .service {
-        grid-template-columns: 1fr;
-    }
 }
