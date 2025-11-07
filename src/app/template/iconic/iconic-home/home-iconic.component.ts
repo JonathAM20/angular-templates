@@ -10,6 +10,7 @@ import { ServicePitch2Component } from '../../../component/service-pitch/2/servi
 import { PricingPlanCardListComponent } from '../../../component/pricing-plan/1/pricing-plan-card-list/pricing-plan-card-list.component';
 import { MenuItem } from '../../../component/menu/menu-item';
 import { Footer1Component } from '../../../component/footer/1/footer1/footer1.component';
+import { Testimonial1Component } from "../../../testimonial1/testimonial1.component";
 
 @Component({
   selector: 'app-home-iconic',
@@ -22,7 +23,8 @@ import { Footer1Component } from '../../../component/footer/1/footer1/footer1.co
     ServicePitch1Component,
     ServicePitch2Component,
     PricingPlanCardListComponent,
-    Footer1Component
+    Footer1Component,
+    Testimonial1Component
 ],
   templateUrl: './home-iconic.component.html',
   styleUrl: './home-iconic.component.css'

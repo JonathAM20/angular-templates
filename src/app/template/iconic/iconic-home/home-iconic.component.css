@@ -61,6 +61,13 @@ app-footer1 {
     margin: 100px;
 }
 
+.customer-testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+
 .footer-service-pitch {
     display: flex;
     justify-content: space-between;
