@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="wrapper" [ngClass]="{'is-sliding': isAnimating}">
+        <div class="testimonial-item" *ngFor="let testimonial of testimonialList">
+            <div class="testimonial-content">
+                <div class="client-photo-container">
+                    <img [src]="testimonial.photoUrl" [alt]="'Foto de ' + testimonial.name">
+                </div>
+
+                <p class="testimonial-quote">"{{ testimonial.quote }}"</p>
+
+                <div class="testimonial-stars">
+                    <span *ngFor="let star of starArray" class="star-icon"
+                        [class.filled]="isStarFilled(star, testimonial)">
+                        ★
+                    </span>
+                </div>
+
+                <div class="client-details">
+                    <h4 class="client-name">{{ testimonial.name }}</h4>
+                    <p class="client-role">{{ testimonial.role }}</p>
+                    <p class="client-company">{{ testimonial.company }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
