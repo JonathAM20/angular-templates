@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
     padding: 50px;
     gap: 100px;
-    background-color: #0d6efd;
+    background-image: url('/iconic/images/footer-img.jpg');
     color: white;
 }
 
