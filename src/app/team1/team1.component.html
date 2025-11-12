@@ -1,0 +1,24 @@
+<div class="team-member-list" [class.is-visible]="isVisible">
+    <div class="card" *ngFor="let teamMember of teamMemberList">
+        <img [src]="teamMember.photoUrl">
+        <div class="personal-data">
+            <div class="identification">
+                <h2>{{ teamMember.name }}</h2>
+                <p>{{ teamMember.role }}</p>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
