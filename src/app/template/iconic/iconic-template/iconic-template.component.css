@@ -1,3 +1,10 @@
+div,
+h1,
+h3,
+app-footer1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .menu-background {
     display: flex;
     flex-direction: column;
@@ -12,15 +19,22 @@
 
     background-size: cover;
     background-position: center;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
     height: 350px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .footer-service-pitch {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 100px;
     gap: 20px;
     padding: 100px;

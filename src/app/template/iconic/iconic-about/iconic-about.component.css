@@ -1,0 +1,28 @@
+div,
+h1,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    margin-top: -180px;
+    margin-bottom: 130px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+}
