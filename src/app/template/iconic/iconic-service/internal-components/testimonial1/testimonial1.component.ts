@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Testimonial } from '../testimonial';
+import { Testimonial } from '../../../../../testimonial';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -1,1 +1,20 @@
-<p>iconic-service works!</p>
+<div class="container">
+    <div class="header" [class.is-visible]="isVisible">
+        <h1>Services</h1>
+        <p>No hours sank into aggregating and cleaning data. No complex SQL queries required. Just the answers
+            teams need to make smarter decisions, fast. Now, that's data-driven.</p>
+    </div>
+    <div class="card-list">
+        <div>
+            <h1>What We Do</h1>
+            <br />
+            <p>We work with you to build comprehensive, thoughtful, and purpose-driven
+                identities and experiences.</p>
+        </div>
+        <app-service-pitch-card1-list [servicePitchList]="servicePitchList"></app-service-pitch-card1-list>
+    </div>
+    <div class="customer-testimonial">
+        <h1>What our customers are saying</h1>
+        <app-testimonial1></app-testimonial1>
+    </div>
+</div>

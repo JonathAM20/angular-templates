@@ -8,13 +8,12 @@ import { AboutPitch1Component } from "./internal-components/about-pitch1/about-p
   selector: 'app-iconic-about',
   standalone: true,
   imports: [
+    AboutPitch1Component,
     AboutPitch2Component,
     AboutPitch3Component,
-    Team1Component,
-    AboutPitch1Component],
+    Team1Component
+  ],
   templateUrl: './iconic-about.component.html',
   styleUrl: './iconic-about.component.css'
 })
-export class IconicAboutComponent {
-
-}
+export class IconicAboutComponent {}

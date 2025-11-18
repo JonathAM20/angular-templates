@@ -25,9 +25,6 @@ app-footer1 {
 .main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 .footer-service-pitch {
@@ -53,4 +50,12 @@ app-footer1 {
 
 .custom-button:hover {
     background-color: #0b5ed7;
+}
+
+@media(min-width: 768px) {
+
+    .main-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

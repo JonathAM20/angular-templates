@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PricingPlan } from '../../../component/pricing-plan/pricing-plan';
-import { ServicePitch } from '../../../component/service-pitch/service-pitch';
+import { ServicePitch } from '../iconic-service/internal-components/service-pitch';
 import { Menu1Component } from '../../../component/menu/1/menu1/menu1.component';
 import { Brand1ListComponent } from '../../../component/brand/1/brand1List/brand1-list.component';
-import { ServicePitchCard1ListComponent } from '../../../component/service-pitch/card/1/service-pitch-card1-list/service-pitch-card1-list.component';
+import { ServicePitchCard1ListComponent } from '../iconic-service/internal-components/service-pitch-card1-list/service-pitch-card1-list.component';
 import { ServicePitch1Component } from '../../../component/service-pitch/1/service-pitch-1.component';
 import { ServicePitch2Component } from '../../../component/service-pitch/2/service-pitch-2.component';
 import { PricingPlanCardListComponent } from '../../../component/pricing-plan/1/pricing-plan-card-list/pricing-plan-card-list.component';
 import { MenuItem } from '../../../component/menu/menu-item';
 import { Footer1Component } from '../../../component/footer/1/footer1/footer1.component';
-import { Testimonial1Component } from "../../../testimonial1/testimonial1.component";
+import { Testimonial1Component } from "../iconic-service/internal-components/testimonial1/testimonial1.component";
 
 @Component({
   selector: 'app-home-iconic',

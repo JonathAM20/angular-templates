@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ServicePitch } from '../../../service-pitch';
+import { ServicePitch } from '../../../../../template/iconic/iconic-service/internal-components/service-pitch';
 
 @Component({
   selector: 'app-service-pitch-card1',

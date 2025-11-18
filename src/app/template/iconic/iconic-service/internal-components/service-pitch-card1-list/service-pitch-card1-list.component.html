@@ -1,0 +1,14 @@
+<div class="card-list" [class.is-visible]="isVisible">
+
+    <div class="card" *ngFor="let item of servicePitchList">
+        <div class="image">
+            <div class="icon">
+                <img [src]="item.urlImage">
+            </div>
+        </div>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.message }}</p>
+        <a [href]="item.urlContent">Learn More</a>
+    </div>
+
+</div>
