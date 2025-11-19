@@ -1,0 +1,44 @@
+div,
+h1,
+h2,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    margin-top: -180px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.header.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+
+    .frame {
+        padding: 40px;
+    }
+}
