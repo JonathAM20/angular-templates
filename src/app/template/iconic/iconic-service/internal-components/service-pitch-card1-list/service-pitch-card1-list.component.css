@@ -2,7 +2,7 @@
     display: grid;
     gap: 30px;
     margin: 20px auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -40,9 +40,9 @@
     padding: 20px;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 768px) {
 
     .card-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }

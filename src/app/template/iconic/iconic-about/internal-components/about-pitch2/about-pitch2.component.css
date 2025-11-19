@@ -21,7 +21,6 @@
 .card {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
     box-shadow: 0 0 100px lightgray;
 }
 
@@ -51,7 +50,7 @@
     }
 
     .card {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
 
     .card-image {

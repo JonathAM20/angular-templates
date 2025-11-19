@@ -19,8 +19,7 @@ h3 {
     color: white;
     text-align: center;
     margin-top: -180px;
-    margin-bottom: 130px;
-
+    margin-bottom: 50px;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -51,6 +50,10 @@ h3 {
 }
 
 @media(min-width: 768px) {
+
+    .header {
+        margin-bottom: 130px;
+    }
 
     .customer-testimonial h1 {
         font-size: xx-large;

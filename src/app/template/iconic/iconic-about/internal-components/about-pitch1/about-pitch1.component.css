@@ -4,7 +4,6 @@
     align-items: center;
     justify-items: center;
     gap: 20px;
-    margin-top: 50px;
     margin-bottom: 50px;
     opacity: 0;
     transform: translateY(50px);
@@ -48,15 +47,33 @@
     position: relative;
     color: white;
     text-align: center;
-    padding: 89px;
+    padding: 50px;
     border-radius: 8px;
     font-size: 1.2em;
     z-index: 3;
 }
 
 .image-text h2 {
-    margin-top: 0;
-    font-size: 2em;
+    font-size: 1em;
+}
+
+.image-text p {
+    font-size: .8em;
+}
+
+@media (min-width: 600px) {
+
+    .image-text {
+        padding: 100px;
+    }
+
+    .image-text h2 {
+        font-size: 1.8em;
+    }
+
+    .image-text p {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -71,7 +88,14 @@
     }
 
     .image-text {
-        padding: 40px;
-        font-size: 0.9em;
+        padding: 70px;
+    }
+
+    .image-text h2 {
+        font-size: 1.1em;
+    }
+
+    .image-text p {
+        font-size: .6em;
     }
 }

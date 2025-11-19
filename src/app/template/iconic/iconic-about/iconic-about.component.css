@@ -4,25 +4,47 @@ h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 90%;
     gap: 50px;
 }
 
 .header {
     display: flex;
     flex-direction: column;
+    
     gap: 20px;
     color: white;
     text-align: center;
     margin-top: -180px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
+}
+
+.component {
+    width: 90%;
 }
 
 .team {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 90%;
     gap: 50px;
+}
+
+@media(min-width: 768px) {
+
+    .header {
+        margin-bottom: 130px;
+    }
+
 }
