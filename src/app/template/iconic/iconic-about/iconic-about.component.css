@@ -21,12 +21,19 @@ h3 {
 .header {
     display: flex;
     flex-direction: column;
-    
     gap: 20px;
     color: white;
     text-align: center;
     margin-top: -180px;
     margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.header.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .component {
