@@ -1,0 +1,61 @@
+<div class="container">
+    <h2>{{ allCards().length }} Posts</h2>
+    <div class="controls-container">
+        <div class="items-per-page-selector">
+            <label for="itemsPerPage">Posts per Page:</label>
+            <select id="itemsPerPage" #itemsPerPageSelect [ngModel]="itemsPerPage()"
+                (change)="changeItemsPerPage(+itemsPerPageSelect.value)" class="styled-select">
+                @for (option of itemsPerPageOptions; track option) {
+                <option [value]="option">{{ option }}</option>
+                }
+            </select>
+        </div>
+        <div class="navigation-buttons">
+            <button (click)="prevPage()" [disabled]="currentPage() === 1" class="nav-button"
+                [ngClass]="{'active': currentPage() > 1, 'disabled': currentPage() === 1}">
+                &lt; Prev
+            </button>
+
+            <span class="page-status">Page {{ currentPage() }} de {{ totalPages() }}</span>
+
+            <button (click)="nextPage()" [disabled]="currentPage() === totalPages()" class="nav-button"
+                [ngClass]="{'active': currentPage() < totalPages(), 'disabled': currentPage() === totalPages()}">
+                Next &gt;
+            </button>
+        </div>
+    </div>
+    <div class="card-grid">
+        @for (card of paginatedCards(); track card.id) {
+        <div class="card-item">
+            <img [src]="card.imagePath">
+            <div class="card-content">
+                <li class="post-indicators">
+                    <a href="#">
+                        <i class="fa fa-user"></i>Admin
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-comment"></i>5 Comment
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-heart"></i>5 Love
+                    </a>
+                </li>
+                <p class="card-subtitle">{{ card.title }}</p>
+                <p class="card-description">{{ card.description }}</p>
+                <div>
+                    <button class="custom-button">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="bottom-controls">
+        <label for="pageSelector">Go to Page:</label>
+        <select id="pageSelector" #pageSelectorRef [ngModel]="currentPage()" (change)="goToPage(+pageSelectorRef.value)"
+            class="styled-select page-selector-small">
+            @for (page of pageNumbers(); track page) {
+            <option [value]="page">Page {{ page }}</option>
+            }
+        </select>
+    </div>
+</div>
