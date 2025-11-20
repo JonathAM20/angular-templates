@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
-import { ContactComponent } from "../../../contact/contact.component";
+import { ContactComponent } from "./internal-components/contact/contact.component";
 
 @Component({
   selector: 'app-iconic-contact',
