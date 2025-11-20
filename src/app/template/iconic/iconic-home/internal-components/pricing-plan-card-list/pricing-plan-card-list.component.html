@@ -1,0 +1,20 @@
+<div class="card-list" [class.is-visible]="isVisible">
+
+    <div class="card" *ngFor="let item of pricingPlanList" [ngClass]="{'main': item.isMain}">
+        <div class="header" [style.backgroundColor]="item.color">
+            <span>$</span>
+            <h1>{{ item.price }}</h1>
+            <span>/month</span>
+        </div>
+        <div class="body">
+            <h2>{{ item.label }}</h2>
+            <div class="service-list">
+                <li *ngFor="let item of item.services">{{ item }}</li>
+            </div>
+            <div>
+                <button class="custom-button">CHOOSE PLAN</button>
+            </div>
+        </div>
+    </div>
+
+</div>

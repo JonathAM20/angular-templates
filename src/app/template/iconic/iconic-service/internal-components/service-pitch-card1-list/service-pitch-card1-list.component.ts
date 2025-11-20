@@ -1,14 +1,12 @@
 import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 import { ServicePitch } from '../service-pitch';
 import { CommonModule } from '@angular/common';
-import { ServicePitchCard1Component } from '../../../../../component/service-pitch/card/1/service-pitch-card1/service-pitch-card1.component';
 
 @Component({
   selector: 'app-service-pitch-card1-list',
   standalone: true,
   imports: [
     CommonModule,
-    ServicePitchCard1Component
   ],
   templateUrl: './service-pitch-card1-list.component.html',
   styleUrl: './service-pitch-card1-list.component.css'

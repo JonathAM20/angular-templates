@@ -1,14 +1,12 @@
 import { Component, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
-import { PricingPlan } from '../../pricing-plan';
 import { CommonModule } from '@angular/common';
-import { PricingPlanCardComponent } from '../pricing-plan-card/pricing-plan-card.component';
+import { PricingPlan } from '../pricing-plan';
 
 @Component({
   selector: 'app-pricing-plan-card-list',
   standalone: true,
   imports: [
-    CommonModule,
-    PricingPlanCardComponent
+    CommonModule
   ],
   templateUrl: './pricing-plan-card-list.component.html',
   styleUrl: './pricing-plan-card-list.component.css'

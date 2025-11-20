@@ -1,7 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { MenuItem } from '../../menu-item';
 import { RouterModule } from '@angular/router';
+
+export interface MenuItem {
+
+  label: string;
+  path: string;
+
+}
 
 @Component({
   selector: 'app-menu1',
@@ -16,7 +22,14 @@ import { RouterModule } from '@angular/router';
 export class Menu1Component {
 
   @Input() logoUrl: string = '';
-  @Input() menuItems: MenuItem[] = [];
+
+  menuItems: MenuItem[] = [
+    { label: 'HOME', path: '/iconic/home' },
+    { label: 'ABOUT', path: '/iconic/about' },
+    { label: 'SERVICES', path: '/iconic/services' },
+    { label: 'BLOG', path: '/iconic/blog' },
+    { label: 'CONTACT', path: '/iconic/contact' },
+  ];
 
   isMenuOpen: boolean = false;
 

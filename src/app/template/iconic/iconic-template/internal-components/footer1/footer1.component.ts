@@ -1,7 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { MenuItem } from '../../../menu/menu-item';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+
+export interface MenuItem {
+
+  label: string;
+  path: string;
+
+}
 
 @Component({
   selector: 'app-footer1',
@@ -15,8 +21,13 @@ import { RouterModule } from '@angular/router';
 })
 export class Footer1Component {
 
-  @Input() logoUrl: string = '';
-  @Input() menuItems: MenuItem[] = [];
+  menuItems: MenuItem[] = [
+    { label: 'HOME', path: '/iconic/home' },
+    { label: 'ABOUT', path: '/iconic/about' },
+    { label: 'SERVICES', path: '/iconic/services' },
+    { label: 'BLOG', path: '/iconic/blog' },
+    { label: 'CONTACT', path: '/iconic/contact' },
+  ];
 
   getPathByLabel(targetLabel: string): string {
     const itemEncontrado = this.menuItems.find(item => item.label.toLowerCase === targetLabel.toLowerCase);
