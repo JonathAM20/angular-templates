@@ -80,7 +80,7 @@
     }
 
     .image-text {
-        padding: 70px;
+        padding: 50px;
     }
 
     .image-text h2 {
@@ -89,5 +89,20 @@
 
     .image-text p {
         font-size: .8em;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .image-text {
+        padding: 100px;
+    }
+
+    .image-text h2 {
+        font-size: 2em;
+    }
+
+    .image-text p {
+        font-size: 1.2em;
     }
 }
