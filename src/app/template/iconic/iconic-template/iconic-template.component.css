@@ -51,11 +51,3 @@ app-footer1 {
 .custom-button:hover {
     background-color: #0b5ed7;
 }
-
-@media(min-width: 768px) {
-
-    .main-content {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
