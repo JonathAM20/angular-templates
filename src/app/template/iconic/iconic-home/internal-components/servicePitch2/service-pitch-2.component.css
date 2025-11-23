@@ -3,17 +3,19 @@
     gap: 50px;
     width: 90%;
     margin: 100px auto;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    overflow: hidden;
 }
 
 .service.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.service-image {
+    overflow: hidden;
 }
 
 .service-image img {
@@ -43,9 +45,9 @@
     background-color: #0b5ed7;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 768px) {
 
     .service {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
