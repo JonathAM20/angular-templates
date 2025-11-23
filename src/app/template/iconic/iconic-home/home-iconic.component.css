@@ -62,9 +62,9 @@ app-footer1 {
 }
 
 .customer-testimonial {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 100px auto;
 }
 
