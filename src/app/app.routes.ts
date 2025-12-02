@@ -8,6 +8,9 @@ import { HomeIconicComponent } from './template/iconic/iconic-home/home-iconic.c
 
 export const routes: Routes = [
     {
+        path: '', component: HomeIconicComponent
+    },
+    {
         path: 'iconic/home', component: HomeIconicComponent
     },
     {
