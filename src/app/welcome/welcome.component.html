@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="header-background">
+        <div class="header">
+            <h1>Angular and CSS Website Templates</h1>
+            <h2>Use your Brand and colors!</h2>
+            <p>Their professional and modern design makes them ideal for any business.</p>
+        </div>
+    </div>
+
+    <div class="templates">
+        <ul class="list">
+            <li class="item" *ngFor="let template of templates">
+                <h2>{{ template.label }}</h2>
+                <a [routerLink]="[template.routePath]">
+                    <img style="width: 100%;" src="iconic/images/desktop.png" alt="Logo">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>footer</p>
+    </div>
+</div>

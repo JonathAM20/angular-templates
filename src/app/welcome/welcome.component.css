@@ -1,0 +1,87 @@
+h1,
+h2,
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}
+
+.header-background {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    background-image:
+        linear-gradient(to top right,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.7) 40%,
+            rgba(0, 0, 0, 0.8) 50%),
+        url('/welcome/devices.png');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.templates {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: -10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #CCC;
+}
+
+.item h2 {
+    margin: 20px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    height: 100px;
+}
+
+@media (min-width: 600px) {
+
+    .container {
+        font-size: medium;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .container {
+        font-size: large;
+    }
+}
