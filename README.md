@@ -1,6 +1,6 @@
 # Angular Templates
 
-## Demo 👉http://angular-templates.s3-website.eu-west-3.amazonaws.com
+## Demo 👉http://angular-css-templates.s3-website.eu-west-3.amazonaws.com
 
 ## Websites and components free for commercial use!
 
