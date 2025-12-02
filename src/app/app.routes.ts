@@ -5,10 +5,11 @@ import { IconicServiceComponent } from './template/iconic/iconic-service/iconic-
 import { IconicBlogComponent } from './template/iconic/iconic-blog/iconic-blog.component';
 import { IconicContactComponent } from './template/iconic/iconic-contact/iconic-contact.component';
 import { HomeIconicComponent } from './template/iconic/iconic-home/home-iconic.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 export const routes: Routes = [
     {
-        path: '', component: HomeIconicComponent
+        path: '', component: WelcomeComponent
     },
     {
         path: 'iconic/home', component: HomeIconicComponent
