@@ -10,10 +10,10 @@ All templates beautifully handcrafted and built with attention to details. Their
 
 ```bash
 # clone the project
-git clone https://github.com/JonathAM20/angular-templates.git
+git clone https://github.com/JonathAM20/angular-css-templates.git
 
 # navigate to project folder
-cd angular-templates
+cd angular-css-templates
 
 # open index.html in Chrome
 
