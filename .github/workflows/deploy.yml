@@ -39,10 +39,4 @@ jobs:
         run: |
           aws s3 sync ./dist/site/ s3://angular-css-templates/ \
             --delete \
-            --acl public-read \
             --exclude '.git/*'
-        
-      # F. Invalidação do Cache (Opcional, se usando CloudFront)
-      - name: Invalidação de Cache do CloudFront (Opcional)
-        run: |
-          aws cloudfront create-invalidation --distribution-id SEU_DISTRIBUTION_ID --paths "/*"
