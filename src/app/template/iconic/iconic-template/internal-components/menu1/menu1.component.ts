@@ -38,7 +38,7 @@ export class Menu1Component {
   }
 
   getPathByLabel(targetLabel: string): string {
-    const itemEncontrado = this.menuItems.find(item => item.label.toLowerCase === targetLabel.toLowerCase);
+    const itemEncontrado = this.menuItems.find(item => item.label.toLowerCase() === targetLabel.toLowerCase());
     return itemEncontrado ? itemEncontrado.path : '';
   }
 
