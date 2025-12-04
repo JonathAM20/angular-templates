@@ -1,5 +1,6 @@
 <div class="container">
-    <div class="header" [class.is-visible]="isVisible">
+    <div class="header" [class.is-visible]="isVisible"
+            (appVisibilityObserver)="handleVisibilityChange($event)">
         <h1>Services</h1>
         <p>No hours sank into aggregating and cleaning data. No complex SQL queries required. Just the answers
             teams need to make smarter decisions, fast. Now, that's data-driven.</p>

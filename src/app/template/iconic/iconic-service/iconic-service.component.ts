@@ -1,50 +1,26 @@
-import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ServicePitchCard1ListComponent } from "./internal-components/service-pitch-card1-list/service-pitch-card1-list.component";
 import { ServicePitch } from './internal-components/service-pitch';
 import { Testimonial1Component } from "./internal-components/testimonial1/testimonial1.component";
+import { VisibilityObserverDirective } from '../../../visibility-observer.directive';
 
 @Component({
   selector: 'app-iconic-service',
   standalone: true,
   imports: [
     ServicePitchCard1ListComponent,
-    Testimonial1Component
+    Testimonial1Component,
+    VisibilityObserverDirective
   ],
   templateUrl: './iconic-service.component.html',
   styleUrl: './iconic-service.component.css'
 })
-export class IconicServiceComponent implements OnInit, OnDestroy {
+export class IconicServiceComponent {
 
   isVisible: boolean = false;
 
-  private observer!: IntersectionObserver;
-
-  constructor(private el: ElementRef) { }
-
-  handleIntersection(entries: IntersectionObserverEntry[]): void {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        this.isVisible = true;
-        this.observer.unobserve(this.el.nativeElement);
-      }
-    });
-  }
-
-  ngOnInit(): void {
-    const options = {
-      root: null,
-      rootMargin: '500px',
-      threshold: 0.2
-    };
-
-    this.observer = new IntersectionObserver(this.handleIntersection.bind(this), options);
-    this.observer.observe(this.el.nativeElement);
-  }
-
-  ngOnDestroy(): void {
-    if (this.observer) {
-      this.observer.unobserve(this.el.nativeElement);
-    }
+  handleVisibilityChange(isVisible: boolean): void {
+    this.isVisible = isVisible;
   }
 
   servicePitchList: ServicePitch[] = [
