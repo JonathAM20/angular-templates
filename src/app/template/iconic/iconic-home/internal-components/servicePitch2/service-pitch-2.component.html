@@ -1,4 +1,4 @@
-<div class="service" [class.is-visible]="isVisible">
+<div class="service" [class.is-visible]="isVisible" (appVisibilityObserver)="handleVisibilityChange($event)">
     <div class="service-pitch">
         <h1>Optimize Every Touchpoint in the Customer Experience</h1>
         <h2>Analytics to answer any business question.</h2>
