@@ -1,4 +1,4 @@
-<div class="team-member-list" [class.is-visible]="isVisible">
+<div class="team-member-list" [class.is-visible]="isVisible" (appVisibilityObserver)="handleVisibilityChange($event)">
     <div class="card" *ngFor="let teamMember of teamMemberList">
         <img [src]="teamMember.photoUrl">
         <div class="personal-data">
