@@ -21,7 +21,6 @@ export class ServicePitchCard1ListComponent {
 
   handleVisibilityChange(isVisible: boolean): void {
     this.isVisible = isVisible;
-    console.log("Componente visível", this.isVisible);
   }
 
 }
