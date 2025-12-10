@@ -1,4 +1,4 @@
-<div class="about" [class.is-visible]="isVisible">
+<div class="about" [class.is-visible]="isVisible" (appVisibilityObserver)="handleVisibilityChange($event)">
     <div class="header">
         <div>
             <h2>Lorem Ipsum is simply dummy text printing industry.</h2>
