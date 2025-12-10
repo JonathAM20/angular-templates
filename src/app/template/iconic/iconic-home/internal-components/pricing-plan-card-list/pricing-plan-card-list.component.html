@@ -1,4 +1,4 @@
-<div class="card-list" [class.is-visible]="isVisible">
+<div class="card-list" [class.is-visible]="isVisible" (appVisibilityObserver)="handleVisibilityChange($event)">
 
     <div class="card" *ngFor="let item of pricingPlanList" [ngClass]="{'main': item.isMain}">
         <div class="header" [style.backgroundColor]="item.color">
