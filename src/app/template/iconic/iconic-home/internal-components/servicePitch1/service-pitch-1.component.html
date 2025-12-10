@@ -1,4 +1,4 @@
-<div class="service" [class.is-visible]="isVisible">
+<div class="service" [class.is-visible]="isVisible" (appVisibilityObserver)="handleVisibilityChange($event)">
     <div class="service-image">
         <img src="iconic/images/s-left-1.png">
     </div>
