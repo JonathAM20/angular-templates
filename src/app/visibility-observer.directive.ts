@@ -17,7 +17,7 @@ export class VisibilityObserverDirective implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     if (!('IntersectionObserver' in window)) {
-      console.warn('Intersection Observer não é suportado por este navegador.');
+      console.warn('The browser has not support to Intersection Observer.');
       return;
     }
     this.setupObserver();
@@ -42,8 +42,10 @@ export class VisibilityObserverDirective implements OnInit, OnDestroy {
 
   private callback = (entries: IntersectionObserverEntry[]) => {
     entries.forEach(entry => {
-      this.appVisibilityObserver.emit(entry.isIntersecting);
-      this.observer.unobserve(this.element.nativeElement);
+      if (entry.isIntersecting) {
+        this.appVisibilityObserver.emit(entry.isIntersecting);
+        this.observer.unobserve(this.element.nativeElement);
+      }
     });
   };
 }
